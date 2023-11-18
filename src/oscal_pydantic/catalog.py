@@ -354,7 +354,7 @@ class Group(base.OscalModel):
         """,
         default=None,
     )
-    props: list[properties.OscalProperty] | None = Field(
+    props: list[properties.OscalProperty | properties.ControlPartProperty] | None = Field(
         description="""
             An attribute, characteristic, or quality of the containing object expressed as a 
             namespace qualified name/value pair.

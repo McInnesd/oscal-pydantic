@@ -53,7 +53,7 @@ class BaseProperty(base.OscalModel):
 
 
 class OscalProperty(BaseProperty):
-    name: datatypes.OscalToken
+    name: typing.Literal["marking"]
 
 
 class LocationProperty(BaseProperty):
